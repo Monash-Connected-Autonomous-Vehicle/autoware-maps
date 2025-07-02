@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osm generator="VMB">
-  <MetaInfo format_version="1" map_version="6" validation_version="1"/>
+  <MetaInfo format_version="1" map_version="7" validation_version="1"/>
   <node id="195" lat="" lon="">
     <tag k="local_x" v="65.7158"/>
     <tag k="local_y" v="-57.6353"/>
@@ -1477,13 +1477,13 @@
     <tag k="ele" v="0.0779"/>
   </node>
   <node id="2469" lat="" lon="">
-    <tag k="local_x" v="56.4751"/>
-    <tag k="local_y" v="-56.8006"/>
+    <tag k="local_x" v="51.7609"/>
+    <tag k="local_y" v="-53.2909"/>
     <tag k="ele" v="0.0256"/>
   </node>
   <node id="2471" lat="" lon="">
-    <tag k="local_x" v="64.4334"/>
-    <tag k="local_y" v="-46.4611"/>
+    <tag k="local_x" v="59.9807"/>
+    <tag k="local_y" v="-42.9687"/>
     <tag k="ele" v="-0.0463"/>
   </node>
   <node id="2485" lat="" lon="">
@@ -2078,7 +2078,7 @@
     <member type="way" role="right" ref="784"/>
     <tag k="type" v="lanelet"/>
     <tag k="subtype" v="road"/>
-    <tag k="speed_limit" v="8"/>
+    <tag k="speed_limit" v="10"/>
     <tag k="location" v="private"/>
     <tag k="one_way" v="yes"/>
   </relation>
