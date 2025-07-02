@@ -1881,35 +1881,45 @@
     <tag k="local_y" v="-21.865"/>
     <tag k="ele" v="-0.5464"/>
   </node>
-  <node id="2464" lat="" lon="">
-    <tag k="local_x" v="36.4673"/>
-    <tag k="local_y" v="-62.0419"/>
-    <tag k="ele" v="0.4078"/>
+  <node id="2488" lat="" lon="">
+    <tag k="local_x" v="55.4179"/>
+    <tag k="local_y" v="-58.9279"/>
+    <tag k="ele" v="0.0638"/>
   </node>
-  <node id="2465" lat="" lon="">
-    <tag k="local_x" v="39.5441"/>
-    <tag k="local_y" v="-57.9382"/>
-    <tag k="ele" v="0.2875"/>
+  <node id="2489" lat="" lon="">
+    <tag k="local_x" v="46.1066"/>
+    <tag k="local_y" v="-70.316"/>
+    <tag k="ele" v="0.5231"/>
   </node>
-  <node id="2472" lat="" lon="">
-    <tag k="local_x" v="50.6966"/>
-    <tag k="local_y" v="-54.7727"/>
-    <tag k="ele" v="0.0652"/>
+  <node id="2490" lat="" lon="">
+    <tag k="local_x" v="30.1182"/>
+    <tag k="local_y" v="-58.0258"/>
+    <tag k="ele" v="0.3814"/>
   </node>
-  <node id="2473" lat="" lon="">
-    <tag k="local_x" v="41.3127"/>
-    <tag k="local_y" v="-66.9907"/>
-    <tag k="ele" v="0.4982"/>
+  <node id="2491" lat="" lon="">
+    <tag k="local_x" v="39.0515"/>
+    <tag k="local_y" v="-46.5237"/>
+    <tag k="ele" v="-0.0365"/>
   </node>
-  <node id="2474" lat="" lon="">
-    <tag k="local_x" v="29.6789"/>
-    <tag k="local_y" v="-57.862"/>
-    <tag k="ele" v="0.3533"/>
+  <node id="2492" lat="" lon="">
+    <tag k="local_x" v="39.0735"/>
+    <tag k="local_y" v="-63.9986"/>
+    <tag k="ele" v="0.1494"/>
   </node>
-  <node id="2476" lat="" lon="">
-    <tag k="local_x" v="39.3661"/>
-    <tag k="local_y" v="-45.7448"/>
-    <tag k="ele" v="-0.0254"/>
+  <node id="2493" lat="" lon="">
+    <tag k="local_x" v="42.0433"/>
+    <tag k="local_y" v="-60.0493"/>
+    <tag k="ele" v="0.0199"/>
+  </node>
+  <node id="2494" lat="" lon="">
+    <tag k="local_x" v="36.723"/>
+    <tag k="local_y" v="-62.2605"/>
+    <tag k="ele" v="0.1494"/>
+  </node>
+  <node id="2495" lat="" lon="">
+    <tag k="local_x" v="39.6928"/>
+    <tag k="local_y" v="-58.3112"/>
+    <tag k="ele" v="0.0199"/>
   </node>
   <way id="196">
     <nd ref="194"/>
@@ -2644,17 +2654,23 @@
     <tag k="type" v="line_thin"/>
     <tag k="subtype" v="solid"/>
   </way>
-  <way id="2466">
-    <nd ref="2464"/>
-    <nd ref="2465"/>
+  <way id="2496">
+    <nd ref="2492"/>
+    <nd ref="2493"/>
+    <tag k="type" v="parking_space"/>
+    <tag k="width" v="2.6"/>
+  </way>
+  <way id="2497">
+    <nd ref="2494"/>
+    <nd ref="2495"/>
     <tag k="type" v="parking_space"/>
     <tag k="width" v="3"/>
   </way>
-  <way id="2475">
-    <nd ref="2472"/>
-    <nd ref="2473"/>
-    <nd ref="2474"/>
-    <nd ref="2476"/>
+  <way id="2498">
+    <nd ref="2488"/>
+    <nd ref="2489"/>
+    <nd ref="2490"/>
+    <nd ref="2491"/>
     <tag k="type" v="parking_lot"/>
     <tag k="area" v="yes"/>
   </way>
