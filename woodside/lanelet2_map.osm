@@ -1882,33 +1882,33 @@
     <tag k="ele" v="-0.5464"/>
   </node>
   <node id="2464" lat="" lon="">
-    <tag k="local_x" v="40.4046"/>
-    <tag k="local_y" v="-64.9016"/>
+    <tag k="local_x" v="36.4673"/>
+    <tag k="local_y" v="-62.0419"/>
     <tag k="ele" v="0.4078"/>
   </node>
   <node id="2465" lat="" lon="">
-    <tag k="local_x" v="43.4814"/>
-    <tag k="local_y" v="-60.7979"/>
+    <tag k="local_x" v="39.5441"/>
+    <tag k="local_y" v="-57.9382"/>
     <tag k="ele" v="0.2875"/>
   </node>
   <node id="2472" lat="" lon="">
-    <tag k="local_x" v="52.9165"/>
-    <tag k="local_y" v="-55.9486"/>
+    <tag k="local_x" v="50.6966"/>
+    <tag k="local_y" v="-54.7727"/>
     <tag k="ele" v="0.0652"/>
   </node>
   <node id="2473" lat="" lon="">
-    <tag k="local_x" v="43.5326"/>
-    <tag k="local_y" v="-68.1666"/>
+    <tag k="local_x" v="41.3127"/>
+    <tag k="local_y" v="-66.9907"/>
     <tag k="ele" v="0.4982"/>
   </node>
   <node id="2474" lat="" lon="">
-    <tag k="local_x" v="31.8988"/>
-    <tag k="local_y" v="-59.0379"/>
+    <tag k="local_x" v="29.6789"/>
+    <tag k="local_y" v="-57.862"/>
     <tag k="ele" v="0.3533"/>
   </node>
   <node id="2476" lat="" lon="">
-    <tag k="local_x" v="41.586"/>
-    <tag k="local_y" v="-46.9207"/>
+    <tag k="local_x" v="39.3661"/>
+    <tag k="local_y" v="-45.7448"/>
     <tag k="ele" v="-0.0254"/>
   </node>
   <way id="196">
