@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm generator="VMB">
+  <MetaInfo format_version="1" map_version="2" validation_version="1"/>
+  <node id="1" lat="" lon="">
+    <tag k="local_x" v="1.0709"/>
+    <tag k="local_y" v="-0.3085"/>
+    <tag k="ele" v="-1.75"/>
+  </node>
+  <node id="2" lat="" lon="">
+    <tag k="local_x" v="0.6047"/>
+    <tag k="local_y" v="6.9501"/>
+    <tag k="ele" v="-1.75"/>
+  </node>
+  <node id="4" lat="" lon="">
+    <tag k="local_x" v="-0.925"/>
+    <tag k="local_y" v="-0.4367"/>
+    <tag k="ele" v="-1.75"/>
+  </node>
+  <node id="5" lat="" lon="">
+    <tag k="local_x" v="-1.3912"/>
+    <tag k="local_y" v="6.8219"/>
+    <tag k="ele" v="-1.75"/>
+  </node>
+  <node id="8" lat="" lon="">
+    <tag k="local_x" v="0.57"/>
+    <tag k="local_y" v="7.3685"/>
+    <tag k="ele" v="-1.75"/>
+  </node>
+  <node id="10" lat="" lon="">
+    <tag k="local_x" v="-1.4231"/>
+    <tag k="local_y" v="7.2026"/>
+    <tag k="ele" v="-1.75"/>
+  </node>
+  <way id="3">
+    <nd ref="1"/>
+    <nd ref="2"/>
+    <tag k="type" v="line_thin"/>
+    <tag k="subtype" v="solid"/>
+  </way>
+  <way id="6">
+    <nd ref="4"/>
+    <nd ref="5"/>
+    <tag k="type" v="line_thin"/>
+    <tag k="subtype" v="solid"/>
+  </way>
+  <way id="9">
+    <nd ref="2"/>
+    <nd ref="8"/>
+    <tag k="type" v="line_thin"/>
+    <tag k="subtype" v="solid"/>
+  </way>
+  <way id="11">
+    <nd ref="5"/>
+    <nd ref="10"/>
+    <tag k="type" v="line_thin"/>
+    <tag k="subtype" v="solid"/>
+  </way>
+  <relation id="7">
+    <member type="way" role="left" ref="6"/>
+    <member type="way" role="right" ref="3"/>
+    <tag k="type" v="lanelet"/>
+    <tag k="subtype" v="road"/>
+    <tag k="speed_limit" v="10"/>
+    <tag k="location" v="urban"/>
+    <tag k="one_way" v="yes"/>
+  </relation>
+  <relation id="12">
+    <member type="way" role="left" ref="11"/>
+    <member type="way" role="right" ref="9"/>
+    <tag k="type" v="lanelet"/>
+    <tag k="subtype" v="road"/>
+    <tag k="speed_limit" v="10"/>
+    <tag k="location" v="urban"/>
+    <tag k="one_way" v="yes"/>
+  </relation>
+</osm>
