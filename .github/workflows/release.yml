@@ -1,0 +1,53 @@
+name: Build and Release HD Map Assets
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Create archives
+        run: |
+          mkdir -p dist
+
+          for dir in */; do
+            [ -d "$dir" ] || continue
+            name=$(basename "$dir")
+            zip -r -X "dist/${name}.zip" "$dir"
+          done
+
+      - name: Generate checksums
+        run: |
+          cd dist
+          sha256sum *.zip > checksums.txt || true
+
+      - name: Generate changelog (from last tag)
+        run: |
+          echo "## Changes" > dist/CHANGELOG.md
+
+          PREV_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || true)
+
+          if [ -z "$PREV_TAG" ]; then
+            echo "- Initial release" >> dist/CHANGELOG.md
+          else
+            git log --pretty=format:"- %s" $PREV_TAG..HEAD >> dist/CHANGELOG.md
+          fi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: HD Map Assets ${{ github.ref_name }}
+          body_path: dist/CHANGELOG.md
+          files: |
+            dist/*.zip
+            dist/checksums.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
