@@ -13184,4 +13184,58 @@
     <tag k="location" v="urban"/>
     <tag k="one_way" v="no"/>
   </relation>
+  <relation id="4676">
+    <member type="way" role="left" ref="4531"/>
+    <member type="way" role="right" ref="4529"/>
+    <tag k="type" v="lanelet"/>
+    <tag k="subtype" v="road"/>
+    <tag k="speed_limit" v="10"/>
+    <tag k="location" v="urban"/>
+    <tag k="one_way" v="yes"/>
+  </relation>
+  <relation id="4677">
+    <member type="way" role="left" ref="4523"/>
+    <member type="way" role="right" ref="4521"/>
+    <tag k="type" v="lanelet"/>
+    <tag k="subtype" v="road"/>
+    <tag k="speed_limit" v="10"/>
+    <tag k="location" v="urban"/>
+    <tag k="one_way" v="yes"/>
+  </relation>
+  <relation id="4731">
+    <member type="way" role="left" ref="4598"/>
+    <member type="way" role="right" ref="4597"/>
+    <tag k="type" v="lanelet"/>
+    <tag k="subtype" v="road"/>
+    <tag k="speed_limit" v="10"/>
+    <tag k="location" v="urban"/>
+    <tag k="one_way" v="yes"/>
+  </relation>
+  <relation id="4732">
+    <member type="way" role="left" ref="4491"/>
+    <member type="way" role="right" ref="4492"/>
+    <tag k="type" v="lanelet"/>
+    <tag k="subtype" v="road"/>
+    <tag k="speed_limit" v="10"/>
+    <tag k="location" v="urban"/>
+    <tag k="one_way" v="yes"/>
+  </relation>
+  <relation id="4733">
+    <member type="way" role="left" ref="4604"/>
+    <member type="way" role="right" ref="4525"/>
+    <tag k="type" v="lanelet"/>
+    <tag k="subtype" v="road"/>
+    <tag k="speed_limit" v="10"/>
+    <tag k="location" v="urban"/>
+    <tag k="one_way" v="yes"/>
+  </relation>
+  <relation id="4734">
+    <member type="way" role="left" ref="4574"/>
+    <member type="way" role="right" ref="4573"/>
+    <tag k="type" v="lanelet"/>
+    <tag k="subtype" v="road"/>
+    <tag k="speed_limit" v="10"/>
+    <tag k="location" v="urban"/>
+    <tag k="one_way" v="yes"/>
+  </relation>
 </osm>
