@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Create archives
         run: |
@@ -31,15 +33,13 @@ jobs:
 
       - name: Generate changelog (from last tag)
         run: |
-          echo "## Changes" > dist/CHANGELOG.md
-
-          PREV_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || true)
-
+          PREV_TAG=$(git tag --sort=-creatordate | grep -v "^${{ github.ref_name }}$" | head -n1)
           if [ -z "$PREV_TAG" ]; then
-            echo "- Initial release" >> dist/CHANGELOG.md
+            BODY="Initial release."
           else
-            git log --pretty=format:"- %s" $PREV_TAG..HEAD >> dist/CHANGELOG.md
+            BODY=$(git log --pretty=format:"- %s" "${PREV_TAG}..HEAD")
           fi
+          echo "$BODY" > dist/CHANGELOG.md
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
