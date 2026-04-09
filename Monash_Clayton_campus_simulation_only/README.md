@@ -8,3 +8,4 @@ http://opendatacommons.org/licenses/dbcl/1.0/.
 
 See LICENSE-ODbL.txt and LICENSE-DbCL.txt for full license terms.
 
+HD-maps is not an accurate representation of roads on the campus, rather, a simplification to facilitate smooth simulations using [Autoware Planning Simulation](https://autowarefoundation.github.io/autoware-documentation/main/demos/planning-sim/)
